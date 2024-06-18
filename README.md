@@ -17,13 +17,15 @@
     npm install
 
 3. Create a .env file in the root directory and add your environment variables:
+```sh
 PORT=5000
 MONGO_URI=your_mongo_db_connection_string
 JWT_SECRET=your_jwt_secret
 OPENAI_API_KEY=your_openai_api_key
-
+```
 4. Running the Application
-npm start
+   `npm start`
 
   Running with Docker
-    docker-compose up
+    `sudo docker-compose build`
+    `sudo docker-compose up`
