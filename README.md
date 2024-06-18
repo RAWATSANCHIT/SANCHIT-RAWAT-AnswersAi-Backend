@@ -1,31 +1,37 @@
-# Sanchit-Rawat-AnswersAi-Backend
 
 ## Setup Instructions
 
 ### Prerequisites
 - Node.js
 - Docker
-- MongoDB
+- MongoDB 
 
 ### Installation
 1. Clone the repository:
-   ```sh
-   git clone https://github.com/YOUR_USERNAME/FIRSTNAME-LASTNAME-AnswersAi-Backend.git
-   cd FIRSTNAME-LASTNAME-AnswersAi-Backend
-   ```
+   ```bash
+   git clone https://github.com/manavgoyal53/Manav-Goyal-AnswersAi-Backend
+   cd Manav-Goyal-AnswersAi-Backend
+
 2. Install dependencies:
+    ```bash
     npm install
 
-3. Create a .env file in the root directory and add your environment variables:
-```sh
-PORT=5000
-MONGO_URI=your_mongo_db_connection_string
-JWT_SECRET=your_jwt_secret
-OPENAI_API_KEY=your_openai_api_key
-```
-4. Running the Application
-   `npm start`
+3. Run the app:
+    ```bash
+    npm start
 
-  Running with Docker
-    `sudo docker-compose build`
-    `sudo docker-compose up`
+### Running with Docker Compose
+
+1. Use the following command
+    ```bash
+    docker compose-up --build
+
+2. Change the following env variables in the docker-compose.yaml:
+    - MONGO_URI=mongodb://mongodb_new:27017/answers_ai
+
+### Environment Variables
+Create a `.env` file in the root directory with the following variables:
+ - DATABASE_URL=mongodb://localhost:27017/your_db_name
+ - JWT_SECRET=your_jwt_secret
+ - API_SECRET=your_anthropic_api_secret
+ - PORT=3000
